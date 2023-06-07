@@ -6,14 +6,16 @@ error_reporting(E_ALL);
 
 /*
 
-In the div.container below, create an HTML form with a select menu and submit button. 
-The form should use the GET method, and action should point to results.php. 
+First, confirm that this page is receiving GET paramaters, by using this code below in the container:
+<?php
+var_dump($_GET);
+?>
 
-Set the select name attribute value to iceCream.
-In your select options, add four ice cream flavors. For the option values, 
-give each option an arbitrary identifier (e.g. 1, 2, 3, 4).
+Once you confirm that you're receiving GET variables, create a variable $iceCream
+and set it equal to the value for iceCream in the $_GET array.
 
-See results.php for more instructions.
+Finally, include a paragraph in the container below, reading "You picked ice cream number $iceCream."
+
 
 */
 
@@ -34,7 +36,7 @@ See results.php for more instructions.
   </head>
   <body>
     <div class="container">
-        <h1>Select an ice cream flavor:</h1>
+        <h1>Ice cream selection</h1>
 
 
 
