@@ -6,6 +6,8 @@ error_reporting(E_ALL);
 
 /* 
 
+Exercise 1: inserting PHP into HTML.
+
 In the HTML doc below, create an h1 tag inside div.container, and insert $heading
 
 Below it, create two paragraph elements, 

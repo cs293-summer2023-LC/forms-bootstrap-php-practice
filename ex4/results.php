@@ -5,20 +5,24 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 /*
+First, confirm that this page is receiving GET paramaters, by using this code below in the container:
+<?php
+var_dump($_GET);
+?>
 
-Exercise 3: Using a form to pass GET variables to another page.
+Once you confirm that you're receiving GET variables, create a variable $shoeId
+and set it equal to the value for shoeId in the $_GET array.
 
+Then create a variable $shoe, and use $shoeId to access the shoe name from the $shoes array.
 
-In the div.container below, create an HTML form with a select menu and submit button. 
-The form should use the GET method, and action should point to results.php. 
+Finally, include a paragraph reading "You selected $shoe." in the div.container. 
 
-Set the select name attribute value to iceCream.
-In your select options, add four ice cream flavors. For the option values, 
-give each option an arbitrary identifier (e.g. 1, 2, 3, 4).
-
-See results.php for more instructions.
 
 */
+
+$shoes=array(1=>"Sandals", 2=>"Flip-flops", 3=>"Sneakers", 4=>"Loafers", 5=>"Wing tips", 6=>"Boots");
+
+
 
 
 ?>
@@ -37,7 +41,7 @@ See results.php for more instructions.
   </head>
   <body>
     <div class="container">
-        <h1>Select an ice cream flavor:</h1>
+        <h1>Shoe results:</h1>
 
 
 

@@ -5,6 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 /* 
+
+Exercise 2: dynamically creating HTML with PHP.
+
 Create an unordered list in div.container below,
 using a foreach loop to generate bullet points for
 each of the shoes in the array $shoes. 

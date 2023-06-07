@@ -6,19 +6,29 @@ error_reporting(E_ALL);
 
 /*
 
-Exercise 3: Using a form to pass GET variables to another page.
+Exercise 4: Dynamically creating form HTML content with PHP, and passing GET variables to a page
 
+This is the same as exercise three, except:
+--rather than making up ice cream names and values, use the $shoes array below
+--Use a foreach loop to loop through $shoes. In this case, you want to use the syntax:
 
-In the div.container below, create an HTML form with a select menu and submit button. 
-The form should use the GET method, and action should point to results.php. 
+foreach($shoes as $shoe => $id) {
+  //code here
+}
+This will let you access both the key and the value in the associative array.
 
-Set the select name attribute value to iceCream.
-In your select options, add four ice cream flavors. For the option values, 
-give each option an arbitrary identifier (e.g. 1, 2, 3, 4).
+Your select element should use the name 'shoeId'. Your options should use the identifier 
+as the value, and the shoe (e.g. "Sandals") in the option text.
 
-See results.php for more instructions.
+The form action should point to results.php, using the GET method.
+
+More instructions on results.php.
 
 */
+
+$shoes=array(1=>"Sandals", 2=>"Flip-flops", 3=>"Sneakers", 4=>"Loafers", 5=>"Wing tips", 6=>"Boots");
+
+
 
 
 ?>
@@ -37,7 +47,7 @@ See results.php for more instructions.
   </head>
   <body>
     <div class="container">
-        <h1>Select an ice cream flavor:</h1>
+        <h1>Select your shoes:</h1>
 
 
 
